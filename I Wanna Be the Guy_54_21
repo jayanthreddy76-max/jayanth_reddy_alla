@@ -1,0 +1,35 @@
+#include <bits/stdc++.h>
+using namespace std;
+    
+int main()
+{
+    int level[100];
+    for(int i=0;i<101;i++)
+    {
+        level[i]=0;
+    }
+    int n;
+    cin>>n;
+    int j;
+    cin>>j;
+    for(int i=0;i<j;i++)
+    {
+        int x;cin>>x;
+        level[x]=1;
+    }
+    int f;cin>>f;
+    for(int i = 0; i < f; i++)
+    {
+        int x;cin>>x;
+        level[x]=1;
+    }
+    int all_present=1;
+    for(int i=1;i<n+1;i++)
+    {
+        all_present&=level[i];
+    }
+    if(all_present)
+    cout<<"I become the guy.";
+    else
+    cout<<"Oh, my keyboard!";
+}

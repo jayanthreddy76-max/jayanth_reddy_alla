@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int n;
+    cin>>n;
+    int c1=0,c2=0;
+    vector<int> v(n);
+    for(int i=0;i<n;i++){
+        cin>>v[i];
+    }
+    int l=0;
+    int r=n-1;
+    for(int i=0;i<n;i++){
+        if(v[l]>v[r]){
+            if(i%2==0)
+            c1+=v[l];
+            else c2+=v[l];
+
+            l++;
+        }
+        else{
+            if(i%2==0)
+            c1+=v[r];
+            else c2+=v[r];
+
+            r--;
+        }
+    }
+    cout<<c1<<" "<<c2;
+}

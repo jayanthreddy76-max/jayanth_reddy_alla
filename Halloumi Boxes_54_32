@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int n;
+    cin>>n;
+    while(n--){
+        int j,k;
+        vector<int> v;
+        cin>>j>>k;
+        for(int i=0;i<j;i++){
+            int a;
+            cin>>a;
+            v.push_back(a);
+        }
+        vector<int> v1,v2;
+        for(int i=0;i<v.size();i++){
+            v2.push_back(v[i]);
+            v1.push_back(v[i]);
+        }
+        sort(v1.begin(),v1.end());
+        if(k>1 || v1==v2)
+        cout<<"YES"<<endl;
+        else cout<<"NO"<<endl;
+    }
+}

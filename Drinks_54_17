@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() 
+{
+    float x;
+    cin>>x;
+    float ans=0;
+    for(int i=0;i<x;i++)
+    {
+    float j;
+    cin>>j;
+    ans=ans+j;
+    }
+    cout<<fixed<<setprecision(5)<<ans/x;
+}

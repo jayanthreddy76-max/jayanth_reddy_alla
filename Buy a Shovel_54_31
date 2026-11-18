@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int x,y;
+    cin>>x>>y;
+    for (int i = 1; i < 11; i++) {
+        int count=x*i;
+        if(count%10==0 || count%10==y){
+            cout<<i<<endl;
+            break;
+    }
+    }
+}

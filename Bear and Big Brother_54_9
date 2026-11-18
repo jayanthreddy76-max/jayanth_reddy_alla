@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int j,f;
+    cin>>j>>f;
+    int count=0;
+    while(j<=f)
+    {
+        j=j*3;
+        f=f*2;
+        count++;
+    }
+    cout<<count;
+}

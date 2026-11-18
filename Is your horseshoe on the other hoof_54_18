@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int x,y,f,j;
+    cin>>x>>y>>f>>j;
+    int count=0;
+    if(x==y || x==f || x==j)
+    count+=1;
+    if(y==f || y==j)
+    count+=1;
+    if(f==j)
+    count+=1;
+    cout<<count;
+}

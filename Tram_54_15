@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int x;
+    cin>>x;
+    int people_in_bus=0,answer=0;
+    for (int i=0;i<x;i++)
+    {
+    int down,up;
+    cin>>down>>up;
+    people_in_bus=people_in_bus-down+up;
+    answer=max(answer,people_in_bus);
+    }
+    cout<<answer;
+}
